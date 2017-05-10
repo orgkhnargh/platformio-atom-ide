@@ -19,6 +19,7 @@ module.exports = {
     }
   },
   "rules": {
+    "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
     "comma-dangle": [
       "error",
       "only-multiline"
@@ -40,12 +41,14 @@ module.exports = {
       "error",
       {"allow": ["warn", "error", "debug"]},
     ],
+    "object-curly-spacing": ["warn", "always"],
     "prefer-const": "error",
     "quotes": [
       "error",
       "single",
       "avoid-escape"
     ],
+    "react/jsx-indent": ["warn", 2],
     "semi": [
       "error",
       "always"
@@ -58,5 +61,6 @@ module.exports = {
         "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
       }
     ],
+    "space-infix-ops": "warn",
   },
 };

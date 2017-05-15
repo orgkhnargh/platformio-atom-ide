@@ -12,31 +12,9 @@
 
 @pio-auth-padding: @component-padding * 3;
 
-.sparse-flex-row() {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.accunt-page {
-  .password-page {
-    .change-password-buttons {
-      .sparse-flex-row();
-
-      .retry-button {
-        padding: @component-padding;
-      }
-    }
-  }
-}
-
 .auth-modal {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   padding: @component-padding * 5 @component-padding * 10;
-  margin: 0 auto;
 
   .header {
     padding-bottom: @pio-auth-padding;
@@ -112,10 +90,6 @@
     dl:not(:last-child) {
       border-bottom: 1px solid lighten(@base-background-color, 3%);
     }
-  }
-
-  .password-page .forgot-password {
-    margin-top: @component-padding * 7;
   }
 
 }

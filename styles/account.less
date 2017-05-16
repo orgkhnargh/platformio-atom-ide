@@ -97,11 +97,18 @@
 .user-status {
   -webkit-user-select: none;
   user-select: none;
+  min-width: 150px;
+  text-align: left;
+
+  .arrow-icon {
+    position: relative;
+    top: 2px;
+  }
 
   .dropdown__content {
-    right: @component-padding*2;  // Same as .topbar-container right padding.
     z-index: 2;  // Fixes issue when Quick access links are above the dropdown.
     padding: @component-padding;
+    margin-top: @component-padding;
     border: @overlay-border-color 1px solid;
     border-radius: @component-border-radius;
     background: @overlay-background-color;
